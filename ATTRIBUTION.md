@@ -6,7 +6,7 @@ ASI-RESEARCH-001 · Sources checked September 14, 2026
 
 **Adversa AI.** [Universal LLM Jailbreak: ChatGPT, GPT-4, BARD, BING, Anthropic, and Beyond](https://adversa.ai/blog/universal-llm-jailbreak-chatgpt-gpt-4-bard-bing-anthropic-and-beyond/). April 13, 2023.
 
-The original publisher page verifies the title and publication date. Its displayed byline is administrative, so this citation uses the organization rather than inventing a personal byline. Alex Polyakov is credited for the associated prior research, as identified in WIRED's reporting. The historical source title is not a claim of universal effectiveness by ASI.
+The original publisher page verifies the title, organizational byline, and publication date. Alex Polyakov is credited for the associated prior research, as identified in WIRED's reporting. The historical source title is not a claim of universal effectiveness by ASI.
 
 Source role: primary historical research. It does not verify the 2026 DeepSeek test or establish exact prompt equivalence. Operational content in the original is not reproduced here.
 
@@ -33,6 +33,7 @@ Source role: primary capability evaluation. Title, team label, and date are disp
 - Aletheia: public-facing research lead name retained from the original repository.
 - The author-supplied PDF/DOCX draft informs the article. It is an author account, not independent experimental evidence.
 - Canonical research source repository: [ASI-Research-v1](https://github.com/holeyfield33-art/ASI-Research-v1).
+- Native article: [The Disclosure Gap on Agent Security Index](https://agent-security-index.vercel.app/#/research/asi-research-001).
 - Public publication surface: [Agent Security Index](https://agent-security-index.vercel.app/#/research).
 
 ## Verification limits

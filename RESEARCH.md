@@ -2,103 +2,117 @@
 
 ## When Public AI Vulnerability Reporting Outlives the Fix
 
-ASI-RESEARCH-001 · Aletheia Sovereign Systems
-Editorial draft · Research period: 2026 · Public evidence pending
+ASI-RESEARCH-001 · ASI Research · Research period: 2026
+Publication edition · Author-reported findings; original evidence pending
 
 ## 1. Abstract
 
-This paper examines an author-reported persistence test: a jailbreak pattern family documented publicly in 2023 was applied to DeepSeek in 2026 and reportedly crossed the tested safety boundary. The question is persistence rather than novelty. Operational prompts and dangerous outputs are withheld.
+Public vulnerability disclosure creates defensive value, but disclosure is not the same as mitigation. This paper examines an author-reported controlled test in which a jailbreak pattern family documented publicly in 2023 remained capable of crossing the tested DeepSeek safety boundary in 2026. The significance is persistence, not novelty: a known pattern could still reach a prohibited outcome.
 
-The argument separates that test from a second, author-reported observation of weapons-related technical assistance, and from independent external reporting. These tracks have different evidentiary roles. Neither an external publication nor an editorial draft authenticates the local experiment. The [evidence register](evidence/README.md) records supplied images separately from the outstanding substantiation requirements.
+The analysis separates that persistence test from a second, author-reported DeepSeek observation of weapons-related technical assistance, and from independent Anthropic reporting. These are distinct evidence tracks, not one experiment or proof of a shared exploit. Operational prompt sequences and dangerous outputs are withheld.
 
-We use *disclosure gap* to describe the interval between public knowledge of a failure mode and durable mitigation. This is an analytical framing, not a measured vendor patch delay.
+The disclosure gap is the period between broad public knowledge of an AI failure mode and durable mitigation of the underlying security weakness. The local findings remain author-reported: original captures, exact test metadata, and historical-pattern correspondence await review. Publication does not convert those gaps into verified evidence.
 
 ## 2. The assumption behind vulnerability disclosure
 
-For this paper, disclosure is valuable because it gives defenders an opportunity to investigate and test a weakness. The security objective is a reduced ability to reach a prohibited outcome, not merely a published description of that outcome.
+The defensive purpose of disclosure is to make a weakness actionable for those responsible for securing a system. A public account can help defenders formulate tests, examine assumptions, and assess whether a mitigation addresses the failure that matters. Publication is a means toward risk reduction, not the endpoint.
 
-A publication date alone cannot establish whether a weakness has been mitigated. Equally, a later observation cannot prove that a service was continuously vulnerable in the intervening years. A defensible persistence claim needs a documented relationship between the historical pattern and the later test, alongside the conditions of that test.
+That purpose depends on mitigation catching up. Knowing the name of an attack, recognizing an example, or refusing a previously published prompt is not equivalent to preventing the outcome. A useful closure claim explains which boundary changed, what conditions were tested, and what uncertainty remains.
 
-The subtitle is not a claim that a particular vendor announced a fix and failed to deliver it. This research has no verified vendor-specific patch chronology.
+Our concern is therefore not that vulnerability research should stay secret. It is that disclosure and demonstrated mitigation should be tracked as separate milestones. A later failure also needs careful interpretation: recurrence does not establish uninterrupted exposure, and the age of a pattern is not the age of a vendor-specific vulnerability.
 
 ## 3. A 2023 pattern, tested again in 2026
 
-Adversa AI published its original jailbreak research on April 13, 2023. That primary publication establishes the historical reference point, not the effectiveness of the author's later test. [1]
+On April 13, 2023, Matt Burgess's WIRED article covered jailbreak research associated with Alex Polyakov and Adversa AI. It is the historical reporting that motivated this investigation, not evidence of a later DeepSeek result. [1](https://www.wired.com/story/chatgpt-jailbreak-generative-ai-hacking/)
 
-Matt Burgess's contemporaneous WIRED article discussed Alex Polyakov and Adversa AI's research. It is credited as the reporting that motivated the author, not treated as primary experimental evidence. [2]
+Adversa AI's original publication, also dated April 13, 2023, provides the primary historical research reference. Its broad title is retained in the references for attribution, not adopted as an ASI claim about transferability. [2](https://adversa.ai/blog/universal-llm-jailbreak-chatgpt-gpt-4-bard-bing-anthropic-and-beyond/)
 
-The author's reported finding is:
+Approximately three years later, the author reports testing the underlying pattern family against DeepSeek in a controlled 2026 interaction. The reported finding is narrow:
 
 > A publicly documented jailbreak pattern remained capable of crossing the tested DeepSeek safety boundary in 2026.
 
-This describes a pattern family, not demonstrated byte-for-byte reuse of a 2023 prompt. The supplied research draft reports a controlled test. Four [user-supplied redacted images](screenshots/README.md) are available, but their authenticity and test linkage are unverified and the visible labels do not substantiate the hidden result. The earlier methodology named July 2026, but the exact date, model/version, interface, conditions, run count, and historical-pattern correspondence remain unverified in the public package. See [Methodology](METHODOLOGY.md).
+This is a persistence claim about a pattern family, not a claim that the exact 2023 prompt worked verbatim. It is not a new jailbreak discovery. The research question is whether a publicly knowable strategy remained usable under the tested conditions.
 
-The finding therefore remains an author-reported result pending evidence review. It cannot establish cross-model transferability, present-day vulnerability, continuous exposure since 2023, or a general success rate.
+The public package does not yet independently substantiate that result. Original captures, exact date, model/version, interface, run count, and the basis for identifying the historical pattern require review. The four supplied gallery images carry AI-generation provenance metadata and are illustrative, not original test captures. Neither their labels nor their layout proves the withheld result. These limitations are recorded in the [methodology](METHODOLOGY.md) and [evidence register](evidence/README.md).
 
 ## 4. Why persistence matters more as capability increases
 
-The consequence of a boundary crossing depends on the assistance or capabilities it exposes. In the separate consequence observation, the author reports that DeepSeek provided weapons-related technical assistance after a safety boundary was bypassed. That report is distinct from the persistence test and is not independently substantiated by the present repository.
+A boundary failure must be assessed in relation to what it exposes. The ability to obtain a disallowed sentence is not the same consequence as access to specialized technical assistance or an action-capable tool. Reliability and consequence are separate dimensions of the security assessment.
 
-No operational output is reproduced. Nor was the correctness, feasibility, or real-world effectiveness of that output established in the material available for this edition. Generating instructions is not proof that a weapon could be built or deployed.
+In a separate 2026 interaction, the author reports that DeepSeek provided weapons-related technical assistance after a safety boundary was bypassed. This observation is included to explain potential consequence, not to supply a replication path or prove that every jailbreak produces the same result. No operational details are published, and the correctness or practical feasibility of the output was not established by this publication.
 
-Anthropic's Frontier Red Team separately reports progress on simulated tactical-intelligence and conventional-weapons evaluations. These evaluations concern capability under specified test conditions, not evidence that any particular jailbreak worked or that a deployed weapon succeeded. [4]
+Anthropic's Frontier Red Team independently reports progress on simulated tactical-intelligence and conventional-weapons tasks, including work associated with specialized human expertise. Those evaluations concern capability under specified conditions; they do not validate the local experiment or establish real-world operational success. [4](https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities)
 
-Our interpretation is that defensive assessment should examine both boundary reliability and the consequences of a failure. The second does not validate the first.
+Our inference is that leaving a failure family partially mitigated can become more consequential as the assistance available behind the boundary improves. That argument does not require claiming that a model acts with independent harmful intent.
 
-## 5. Anthropic's September 2026 threat-intelligence findings
+## 5. Anthropic's September 2026 findings
 
-Anthropic reports six conventional-weapons cases across China, Russia, and Yemen. Its Yemen case describes assistance to a guided-weapons program and an apparently failed field test; Anthropic says it has no evidence that the actors fielded an operational device. The company reports banning associated accounts and incorporating findings into safeguards. These are the provider's findings, not ASI's independent verification. [3]
+Anthropic's September report describes six conventional-weapons cases across China, Russia, and Yemen. In its Yemen case, the provider describes a guided-rocket effort using Claude for guidance, navigation and control software, simulation, firmware work, and post-test diagnosis. It reports that actors split work across sessions and concealed objectives to circumvent safeguards. A field test apparently failed; Anthropic says it has no evidence that the actors fielded an operational device. [3](https://www.anthropic.com/threat-intelligence-report-september-2026)
 
-This context is relevant to potential consequences. It does not authenticate the DeepSeek experiments or identify their attack path.
+Anthropic reports banning associated accounts, incorporating investigative findings into safeguards, and introducing classifiers intended to detect and block weapons-development traffic. These are the provider's findings and response claims, not an independent ASI investigation. [3](https://www.anthropic.com/threat-intelligence-report-september-2026)
+
+The cases provide real-world context for the consequence question. They do not establish the mechanism, repeatability, or validity of the DeepSeek tests.
 
 ## 6. Different attacks, converging consequence
 
-The persistence test asks whether an old pattern family can recur. The consequence observation asks what assistance the author encountered in a separate interaction. The external report documents the provider's investigation of other actors and systems.
+The DeepSeek experiment and Anthropic's threat cases involved different models, actors, environments, methods, and objectives at intermediate stages. The controlled persistence test asked whether a known pattern family could recur. The separate consequence observation concerned the assistance encountered after a boundary crossing. The external investigations concerned other actors pursuing their own objectives.
 
-There is no evidence in this research that Anthropic's reported actors used the tested DeepSeek pattern or the same attack class. Their findings must not be combined into a shared exploit narrative. We also do not infer that public disclosure caused the reported misuse.
+There is no evidence that Anthropic's actors used the jailbreak tested here. This paper does not assign them the same attack class. It also does not claim that public reporting caused their misuse.
 
-The connection is an interpretation at the level of consequence: a safety failure can matter more when it exposes useful technical assistance. No causal link between these events is required for that concern, and none is established here.
+The connection is at the consequence layer: different security failures can converge on access to consequential technical assistance that safety systems are intended to restrict. This is an analytical comparison, not a shared-exploit attribution. Keeping those levels separate prevents external reporting from lending false verification to an unrelated experiment.
 
 ## 7. The disclosure gap
 
-We define the disclosure gap as the period between broad public knowledge of an AI failure mode and durable mitigation of the underlying weakness. For this case, neither the start of DeepSeek exposure nor a verified closure date is known. The 2023 publication and reported 2026 test do not establish a continuously open vulnerability.
+We define the disclosure gap as:
 
-The practical question is whether a mitigation prevents the prohibited outcome across representative conditions. A historical prompt can be a regression input, but passing one test should not be interpreted as closing an entire failure family.
+> The period between broad public knowledge of an AI failure mode and durable mitigation of the underlying security weakness.
 
-This framing is intended to improve how closure is demonstrated. It is not an argument for suppressing defensive research or publishing dangerous replication instructions.
+This definition is not a measurement of DeepSeek's patch delay. The research does not establish when DeepSeek first became exposed, continuous vulnerability since 2023, or a verified closure date. The subtitle does not allege failure of a vendor-announced fix.
 
-## 8. Why AI safety must become security engineering
+For model-mediated behavior, a closure claim may need more than a conventional "fixed in version X" boundary. The defensive test surface includes prompt variation, task decomposition, session splitting, role framing, context manipulation, and the boundary between a model and its tools. These are conceptual dimensions for authorized evaluation, not a sequence of bypass instructions.
 
-Our recommendation is to treat model refusals as one layer of defense and to make consequential permissions independently enforceable. For systems with tools, this means explicit authorization, least privilege, isolation, and checks at the point where an action would occur.
+The important question is not only "Was this exact prompt patched?" It is "Can an adversary still reach the prohibited objective?" A refusal on one input can be useful evidence, but it does not establish containment across that broader surface. Durable mitigation needs a defined scope, representative testing, and reassessment when the model, permissions, or surrounding system changes.
 
-Operators should preserve instruction provenance, review high-consequence actions, and maintain authorized, redaction-safe regression tests. Monitoring should be proportionate and privacy-conscious. These are defensive recommendations, not controls validated by this study.
+## 8. AI safety as security engineering
 
-Such controls can limit actions available to an agent; they do not by themselves prevent a text-only model from producing harmful information. No ASI product coverage or effectiveness claim follows from this paper.
+A refusal is model behavior. A security boundary is architecture.
+
+Our recommendation is to retain model-level safeguards while making consequential permissions independently enforceable. Authorization outside the model should determine what a workload can do, rather than accepting the model's assertion that an action is permitted. Least privilege and scoped credentials reduce the authority available if a decision fails.
+
+Sandboxing can constrain execution. Tool policy can enforce limits at the point of action. Provenance can help preserve the distinction between external content and trusted instructions. These controls address different parts of a system; none is validated by this paper simply because it is recommended.
+
+Monitoring should examine relevant misuse patterns while respecting privacy and retention limits. Human approval should be attached to clearly defined consequential actions, with enough context for meaningful review. Repeated, authorized adversarial testing should revisit known attack classes as well as new findings.
+
+These architectural controls can limit agent actions. They do not, by themselves, prevent a text-only model from providing harmful information. Defensive evaluation must therefore distinguish output safeguards from tool authorization and avoid presenting either as a complete solution.
 
 ## 9. What this paper does not claim
 
-- It does not establish vulnerability across all models, unchanged reuse of the original prompt, or continuous exposure since 2023.
-- It does not assert that DeepSeek is currently vulnerable or that a vendor's announced fix failed.
-- It does not link the DeepSeek test and Anthropic's cases to the same jailbreak or attack class.
-- It does not claim that public disclosure caused misuse or that safety has not improved.
-- It does not demonstrate autonomous weapon design, construction, deployment, or validated output feasibility.
-- It does not establish prevalence, a success rate, or independent reproduction.
-- It does not upgrade Aletheia, Aegis, Lite, or any external product's evidence status.
-- It does not publish operational prompts, bypass steps, or dangerous outputs.
+- It does not claim that every model is vulnerable or that every historical jailbreak remains viable.
+- It does not establish verbatim reuse of a 2023 prompt, uninterrupted exposure, present-day DeepSeek vulnerability, or failure of an announced fix.
+- It does not claim that the DeepSeek tests and Anthropic's cases used the same jailbreak or attack class.
+- It does not claim that public disclosure caused misuse, or that safety has not improved.
+- It does not establish independent reproduction, a success rate, or population-level prevalence.
+- It does not prove the correctness or feasibility of the separate weapons-related output.
+- It does not claim that AI systems autonomously chose to develop weapons.
+- It does not validate a product, certify a mitigation, or upgrade any product's evidence status.
+- It does not publish operational prompts, dangerous outputs, or actionable bypass procedures.
+
+Original screenshots may exist in the author's possession, but they have not been supplied to this publication workflow. The public gallery is illustrative. Exact test metadata and the relationship to the historical pattern remain unresolved; the local results are consequently attributed to the author rather than described as independently verified.
 
 ## 10. Conclusion
 
-Disclosure and demonstrated mitigation are different milestones. The reported DeepSeek result raises a narrow persistence question that deserves evidence-led examination, not expansion into a universal claim.
+Public disclosure is valuable when it helps defenders identify, test, and contain a weakness. The reported DeepSeek finding asks whether an old, public pattern family can still reach a prohibited objective. Its significance is not novelty, but the possibility that familiarity with a failure has been mistaken for closure.
 
-The public package must still supply safe evidence of the boundary crossing and its provenance. Independent context does not close that gap. Until those materials and the test metadata are reviewed, this article remains an editorial draft with an author-reported finding.
+The separate consequence observation and independent external reporting explain why that question deserves attention. They do not prove the same exploit was used, and they do not fill the local evidence gaps. The publication's claim remains scoped to the author's reported test, with those gaps visible.
 
-The defensive objective is to show that known failure patterns no longer produce prohibited outcomes under documented conditions. Publishing a technique and proving that it has been contained should never be treated as the same event.
+Known does not mean fixed. Published does not mean mitigated. Refusal alone is not a security boundary.
 
 ## 11. References
 
-1. Adversa AI. [Universal LLM Jailbreak: ChatGPT, GPT-4, BARD, BING, Anthropic, and Beyond](https://adversa.ai/blog/universal-llm-jailbreak-chatgpt-gpt-4-bard-bing-anthropic-and-beyond/). April 13, 2023. Primary historical research. The original title is retained for attribution; its breadth is not adopted as ASI's claim.
-2. Burgess, Matt. [The Hacking of ChatGPT Is Just Getting Started](https://www.wired.com/story/chatgpt-jailbreak-generative-ai-hacking/). WIRED, April 13, 2023. Original reporting that motivated the author; not a primary test record.
-3. Anthropic. [Detecting and countering misuse of AI: September 2026](https://www.anthropic.com/threat-intelligence-report-september-2026). September 2026. Primary provider threat-intelligence report; see conventional-weapons cases and GTG-87001.
+1. Matt Burgess. [The Hacking of ChatGPT Is Just Getting Started](https://www.wired.com/story/chatgpt-jailbreak-generative-ai-hacking/). WIRED, April 13, 2023. Historical reporting; secondary to the underlying research.
+2. Adversa AI. [Universal LLM Jailbreak: ChatGPT, GPT-4, BARD, BING, Anthropic, and Beyond](https://adversa.ai/blog/universal-llm-jailbreak-chatgpt-gpt-4-bard-bing-anthropic-and-beyond/). April 13, 2023. Primary historical research; the title's breadth is not ASI's claim.
+3. Anthropic. [Detecting and countering misuse of AI: September 2026](https://www.anthropic.com/threat-intelligence-report-september-2026). September 2026. Primary provider threat intelligence; conventional-weapons section and GTG-87001.
 4. Anthropic Frontier Red Team. [Measuring tactical intelligence targeting and conventional weapons capabilities of AI models](https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities). September 10, 2026. Primary capability evaluation.
+5. ASI Research. [ASI Research 001 canonical repository](https://github.com/holeyfield33-art/ASI-Research-v1). Publication artifact and author-reported local findings, not independent verification.
 
-External publications checked September 14, 2026. Local findings are attributed to the supplied author draft and are tracked separately in the [evidence register](evidence/README.md). Exact source roles and verification limits appear in [Attribution](ATTRIBUTION.md).
+External sources reviewed September 14, 2026. See [attribution](ATTRIBUTION.md) for source roles, research affiliation, and verification limits.

@@ -1,32 +1,35 @@
 # Evidence register
 
-ASI-RESEARCH-001 · Editorial draft
+ASI-RESEARCH-001 · Publication edition with evidence limitations
 
-Four [user-supplied redacted images](../screenshots/README.md) are now included, unchanged. They replace the old image-named text placeholders, which remain recoverable in Git history. Their authenticity, editing/generation history, and test-run linkage are unverified. They do not independently establish the withheld output, test date, model/version, or historical-pattern correspondence. The evidence requirements below therefore remain open; gallery numbering is not an assignment to a test or evidence ID.
+The author reports possessing original screenshots. They have not been supplied to this publication workflow. The following preferred files are not present and must not be represented as completed evidence.
 
-| ID | Expected artifact | Status |
-| --- | --- | --- |
-| EVIDENCE-001 | Redacted screenshot supporting the reported 2026 DeepSeek safety-boundary crossing | pending editorial addition |
-| EVIDENCE-002 | Redacted screenshot or thread segment supporting research timeline and provenance | pending editorial addition |
-| EVIDENCE-003 | Optional redacted screenshot supporting the separate weapons-related consequence observation | pending editorial addition |
+| ID | Preferred filename in screenshots/ | Intended role | Status |
+| --- | --- | --- | --- |
+| EVIDENCE-001 | evidence-001-setup-redacted.png | Application/session setup and available test metadata | pending original capture and safe review |
+| EVIDENCE-002 | evidence-002-sequence-redacted.png | Multi-turn interaction and timeline/provenance without the bypass sequence | pending original capture and safe review |
+| EVIDENCE-003 | evidence-003-boundary-crossing-redacted.png | Non-operational support for the narrow boundary-crossing claim | pending original capture and safe review |
+| EVIDENCE-004 | evidence-004-consequence-redacted.png | Support for the separate consequence observation without dangerous details | pending original capture and safe review |
 
-The four gallery files contain embedded OpenAI / `trainedAlgorithmicMedia` metadata. They are illustrative assets, not authenticated test captures, and do not satisfy EVIDENCE-001, EVIDENCE-002, or EVIDENCE-003. No original captures were supplied for comparison; no cryptographic provenance validation was performed.
+## Existing illustrative assets
 
-## Evidence acceptance
+Four [supplied gallery images](../screenshots/README.md) remain available as illustrations. Their embedded metadata includes OpenAI, c2pa.created, and trainedAlgorithmicMedia. They are not original test captures and do not satisfy any evidence ID above. Metadata signatures were not cryptographically validated. Gallery numbering does not establish test chronology.
 
-For each future file, record its actual filename, track/run identifier, date/time and timezone if available, visible platform/model metadata, provenance, redaction scope, reviewer, and the precise claim supported. Mark unavailable metadata explicitly. A screenshot alone cannot establish cross-model transferability, repeatability, output correctness, or present-day vulnerability.
+The former image-named text placeholders were removed and remain recoverable in Git history. No original evidence file has been fabricated, relabeled from an illustration, or generated.
 
-EVIDENCE-001 and EVIDENCE-002 are needed to substantiate the persistence claim for final editorial release. EVIDENCE-003 is optional as a public artifact; without support, the separate observation must remain explicitly author-reported or be removed.
+## Acceptance and redaction
 
-EVIDENCE-003 must redact **every operational instruction, quantity, procedure, recipe, and actionable weapons detail**. No dangerous content is needed to populate this register.
+Preserve application/session context, available date/time and timezone, model/platform identity where visible, response-duration markers, and enough layout to show interaction continuity. Record unavailable metadata explicitly.
 
-## Open editorial checks
+Withhold the operational prompt sequence, actionable weapons details, and personal/account information. Redact all recipes, material combinations, quantities, construction procedures, and triggering details. Do not expose any actionable content to prove that a result existed.
 
-- Establish the exact test date, model/version and interface where records permit.
-- Resolve the unverified July 2026 date from the old methodology.
-- Verify historical-pattern correspondence without publishing a bypass sequence.
-- Establish the available run count and whether controls or repeat runs actually exist.
-- Review the separate consequence observation without attempting practical weapons validation.
-- Obtain article text approval before generating a final PDF.
+For each future artifact, record the actual filename, distinct track/run identifier, provenance, redaction scope, reviewer, and precise claim supported. Irreversibly redact and inspect the final export, including embedded data. A screenshot's presence does not establish the correctness of hidden content, repeatability, or present-day vulnerability.
 
-Do not add empty files, synthetic screenshots, fake metadata, or placeholders disguised as completed evidence. Follow [screenshot publication rules](../screenshots/README.md).
+## Unresolved checks
+
+- Exact test date/time, model/version, interface, run count, and control availability.
+- The unverified July 2026 date from the earlier methodology.
+- The basis for historical-pattern correspondence.
+- Independent substantiation of the local boundary crossing and separate consequence observation.
+
+The article is published with these limitations visible. No stronger evidence status or final PDF is implied. See [methodology](../METHODOLOGY.md) and [screenshot rules](../screenshots/README.md).

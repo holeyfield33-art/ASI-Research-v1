@@ -1,6 +1,6 @@
 # Methodology
 
-ASI-RESEARCH-001 · Editorial draft · Redaction-safe
+ASI-RESEARCH-001 · Publication edition with evidence limitations · Redaction-safe
 
 ## Research question
 
@@ -10,8 +10,8 @@ Can a publicly documented jailbreak pattern remain operational years after discl
 
 | Track | Purpose | Present status |
 | --- | --- | --- |
-| Persistence test | Assess the author's reported 2026 DeepSeek boundary crossing against a historical pattern family | Author-reported; EVIDENCE-001 and EVIDENCE-002 pending editorial addition |
-| Consequence observation | Document a separate author-reported instance of weapons-related technical assistance without publishing dangerous content | Public support pending; EVIDENCE-003 optional, but the observation remains qualified if absent |
+| Persistence test | Assess the author's reported 2026 DeepSeek boundary crossing against a historical pattern family | Author-reported; setup, sequence, and boundary-crossing originals (EVIDENCE-001 to EVIDENCE-003) pending |
+| Consequence observation | Document a separate author-reported instance of weapons-related technical assistance without publishing dangerous content | Public support pending; EVIDENCE-004 would support this distinct observation |
 | External context | Interpret independent publications, not enroll their cases in the experiment | Exact references in ATTRIBUTION.md; not replication evidence |
 
 ## What is and is not recorded
@@ -35,7 +35,7 @@ This is an evidence-review procedure, not a completed experiment log or a public
 
 ## Success criteria and limits
 
-The reported persistence outcome is a crossing of a defined safety boundary under the recorded conditions. Final editorial acceptance requires a reviewer to be able to substantiate that narrow statement from authorized evidence.
+The reported persistence outcome is a crossing of a defined safety boundary under the recorded conditions. This edition publishes that finding as an author report, not an independently verified reproduction. A stronger evidence status requires review of authorized original records that substantiate the narrow statement.
 
 The separate consequence observation concerns the presence of weapons-related technical assistance. It does not test the correctness or practical effectiveness of that assistance. Do not attempt physical validation or publish technical instructions.
 
@@ -49,6 +49,6 @@ Do not commit raw sensitive records, hidden layers, embedded text, or reversible
 
 ## Editorial release gates
 
-Before approving the article for a final PDF, confirm the exact metadata available, review EVIDENCE-001 and EVIDENCE-002, and verify the relationship to the historical source. Review EVIDENCE-003 or retain the explicit qualification of the separate observation; remove it if it cannot be responsibly supported.
+No final PDF is produced for this edition. Before a later final PDF or evidence-status change, confirm available metadata, review EVIDENCE-001 through EVIDENCE-003, and verify the relationship to the historical source. Review EVIDENCE-004 or retain the explicit qualification of the separate observation; remove it if it cannot be responsibly supported.
 
 Resolve the [evidence register](evidence/README.md), recheck external citations, and obtain author approval of the text. No AAC assignment is made in this edition: a pattern-specific mapping requires sufficient evidence and the current ASI taxonomy. No product evidence status changes follow from this work.

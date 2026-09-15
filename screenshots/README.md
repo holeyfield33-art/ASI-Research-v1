@@ -36,7 +36,9 @@ The filenames are receipt provenance, not evidence of capture time or authentici
 
 ## Preserve where possible
 
-Keep platform identity, date/time, model/version, and enough result context to explain the narrow claim. Note what is unavailable or redacted. Do not reconstruct missing metadata.
+The preferred original files are `evidence-001-setup-redacted.png`, `evidence-002-sequence-redacted.png`, `evidence-003-boundary-crossing-redacted.png`, and `evidence-004-consequence-redacted.png`. All remain pending; do not rename the illustrative gallery images to those filenames. See the evidence register for their distinct roles.
+
+Keep application/session context, platform identity, date/time, model/version, response-duration markers, and enough layout to show multi-turn continuity and continued responses. Note what is unavailable or redacted. Do not reconstruct missing metadata or claim that hidden content has been independently verified.
 
 ## Withhold
 
